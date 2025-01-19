@@ -221,7 +221,7 @@ li, dd, dl {
 }
 
 .skills-and-abilities dd {
-    background-color: rgba(23, 162, 184, 0.6);
+    background-color: rgba(76, 206, 226, 0.6);
     color: black;
     list-style-type: none;
     margin-left: auto;
@@ -237,7 +237,7 @@ li, dd, dl {
 }
 
 .list-header {
-    background-color: rgba(23, 162, 184, 0.75);
+    background-color: rgba(76, 206, 226, 0.75);
     text-align: center;
     font-size: x-large;
     letter-spacing: 5px;
@@ -357,7 +357,7 @@ li, dd, dl {
     padding: 0;
     width: 100%;
     margin: 0 auto 0 auto;
-    background-color: rgba(23, 162, 184, 0.85) !important;
+    background-color: rgba(12, 88, 100, 0.85) !important;
 }
 
 #mainlogo {
