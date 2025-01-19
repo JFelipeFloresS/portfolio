@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./script/timeline.js"></script>
+    <!-- <script src="../private/DB/db.js"></script> -->
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Felipe Flores</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark" width="100%" id="top-bar" style="background-color: rgba(23, 162, 184, 1);">
+        <a class="navbar-brand mainlogo" href="./index.html"><img id="mainlogo" src="./assets/favicon.png" alt="FELIPE FLORES" width="25px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation" style="border: none !important; padding: none;"><img src="./assets/hamburger.png" alt="=" width="30px"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#my-story">STORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#further-training">TRAINING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills-and-abilities">TECHNOLOGIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#socials">LINKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-me" id="contact-me" href="mailto:josefelipefloress@gmail.com">MAIL ME</a>
+                </li>
+                <div class="me-container">
+                    <img src="./assets/me.png" alt="Me" width="50px" class="me centre-image" id="me"/>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="text-center">
+
+        <div class="main-content text-left">
+            <div class="topic about">
+                <p class="opening">
+                    Tech brazilian living in Ireland since 2017.
+                    <br>
+                    Head of Software Engineering at <a href="https://www.precisionsportstech.com/" target="_blank">Precision Sports Technology</a>
+                    <br>
+                    Former Software Development Engineering Intern at Amazon within the <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html" target="_blank">Aurora</a> team at AWS.
+                </p>
+                <hr>
+                <p class="text-center">
+                    Detail-oriented and result-driven.
+                    <br>
+                    Proactive, driven, innovative and diligent.
+                    <br>
+                    Hands-on experience in software development, deployment, and maintenance.
+                </p>
+            </div>
+
+            <div class="topic projects-container" id="projects">
+                <h1 class="section-header">PROJECTS</h1>
+
+                <div class="projects row">
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project" id="unity-app">
+                            <h2>Unity/C# Mobile Application</h2>
+
+                            <p><strong>Technologies used:</strong> Unity, C#, MSAL, Azure AD B2C</p>
+                            <p><strong>IDE:</strong> <img src="./assets/rider.png" alt="JetBrains Rider" height="20px"> JetBrains Rider/<img src="./assets/unity.png" alt="Unity Engine" height="20px"> Unity Engine</p>
+
+                            <p>
+                                <strong>Unity/C# Mobile App</strong>
+                                <br>
+                                <p>Application for iOS built with Unity 3D for motion capture of exercises for both athletes and physiotherapy patients.</p>
+                                <p>User authentication through Azure AD B2C Tenant for app usage and API requests authentication.</p>
+                                <p>Deployed to App Store as KinetikIQ.</p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project" id="vue-application">
+                            <h2>Vue Web Application</h2>
+
+                            <p><strong>Technologies used:</strong> JavaScript, Vue, Azure Static Web App, GitHub Actions, Staging environments, HTML, CSS, TailWind, MSAL, Azure AD B2C, eCharts</p>
+                            <p><strong>IDE:</strong> <img src="./assets/webstorm.png" alt="JetBrains WebStorm" height="20px"> JetBrains WebStorm</p>
+
+                            <p>
+                                <strong>Vue Web App</strong>
+                                <br>
+                                <p>Web application to display the data retrieved with the iOS application and processed through Databricks.</p>
+                                <p>User authentication through Azure AD B2C Tenant for app usage and API requests authentication.</p>
+                                <p>Deployed in Azure as a Static Web App through GitHub actions and Azure DevOps pipeline.</p>
+                                <p>Deployment in steps: unit tests -> deployment to staging environment -> integration tests -> deployment to the pre production environment -> integration tests -> deployment to the production environment</p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project" id="java-services">
+                            <h2>Java Spring Microservices</h2>
+
+                            <p><strong>Technologies used:</strong> Java Spring Boot, Azure Front Door, Azure App Service, Azure App Service Plan, Azure DevOps Pipelines, PostgreSQL, Cosmos DB, Azure Blob Storage</p>
+                            <p><strong>IDE:</strong> <img src="./assets/intellij.png" alt="JetBrains IntelliJ" height="20px"> JetBrains IntelliJ</p>
+
+                            <p>
+                                <strong>Java Spring Microservices</strong>
+                                <br>
+                                <p>Part of the microservices architecture.</p>
+                                <div>
+                                    Initially a single API connected to PostgreSQL and Azure Blob Storage. Expanded by myself into currently 3 diverse services - 2 Java Spring and 1 ASP .NET Core.
+                                    <ul>
+                                        <li>
+                                            Connection with PostgreSQL and Azure Blob Storage:
+                                            <ul>
+                                                <li>A service that is connected to an Azure PostgreSQL Flexible Server and different containers of a number of Azure Blob Storage Accounts. The containers store different types of files, including images, videos and csv files.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Connection with Cosmos DB:
+                                            <ul>
+                                                <li>A service that is connected to a NoSQL Azure Cosmos DB.</li>
+                                                <li>The Cosmos DB is populated by a Databricks pipeline.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project" id="dotnet-services">
+                            <h2>ASP .NET Core Notifications Microservice/Web Socket</h2>
+
+                            <p><strong>Technologies used:</strong> ASP .NET Core, </p>
+                            <p><strong>IDE:</strong> <img src="./assets/rider.png" alt="JetBrains Rider" height="20px"> JetBrains Rider</p>
+
+                            <p>
+                                <strong>ASP .NET Core Notifications Microservice/Web Socket</strong>
+                                <br>
+                                <p>Part of the microservices architecture.</p>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            Web Socket:
+                                            <ul>
+                                                <li>A service that has a Web Socket connection to a both a Vue.js and a Unity/C# mobile applications to deliver timely notifications.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project" id="apg-cat">
+                            <h2>Aurora PostgreSQL Compatibility Assessment Tool Extension</h2>
+
+                            <p><strong>Technologies used:</strong> C, Bash script, AWS S3, AWS CodeCommit, AWS EC2, a number of internal tools for AWS, PL/pgSQL, SQL scripting</p>
+                            <p><strong>IDE:</strong> <img src="./assets/vscode.png" alt="Microsoft Visual Studio Code" height="20px"> Microsoft Visual Studio Code</p>
+
+                            <p>
+                                <strong>Compatibility Assessment Tool</strong>
+                                <br>
+                            Extension for PostgreSQL for customers to assess the compatibility of their Aurora application (including functions, procedures, triggers, tables etc.) with Aurora Limitless Database.
+                            <br><br>
+                            UX: Customers install an extension in their application and call a function to request the assessment mode to be enabled. AWS then performs the necessary actions to enable the assessment asynchronously. The assessment is done by the Assessment Tool extension for PostgreSQL in a separate database, finally uploading the results as a document to an S3 bucket.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/apgcat.png" alt="Aurora PostgreSQL CAT" width="100%">
+                                    <p><i>Aurora PostgreSQL CAT</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/leitefrancisco/AppFinal">Cross-platform social media mobile app with a built-in online game</a></h2>
+
+                            <p><strong>Technologies used:</strong> C#, Xamarin, Unity, MongoDB (Self-built), JavaScript, Node.js, Express, RESTful API, Mongoose, EC2, AWS</p>
+                            <p><strong>IDE:</strong> <img height="20px" src="./assets/Microsoft_Visual_Studio_2022.svg" alt="Microsoft Visual Studio"> Microsoft Visual Studio</p>
+
+                            <p>
+                                <strong>Indie Station</strong>
+                                <br>
+                                This was my final year project for my BSc in Information Technology at CCT College Dublin.
+                                <br><br>
+                                Self-built MongoDB database hosted on an EC2 instance on AWS. The database is accessed by the mobile app through a Node.js express RESTful API using Mongoose.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/indiestationui.png" alt="Indie Station UI" width="100%%">
+                                    <p><i>Indie Station UI</i></p>
+                                </div>
+                                <div class="image-container col-sm">
+                                    <img src="./assets/treasurehunterui.png" alt="Treasure Hunter UI" width="100%%">
+                                    <p><i>Treasure Hunter Online Game UI</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/GUI-Programming-CA1">GUI appointment system for barbers and customers</a></h2>
+
+                            <p><strong>Technologies used:</strong> Java, Java Swing, JDBC, MySQL (Self-built), Google Cloud Platform</p>
+                            <p><strong>IDE:</strong> <img height="20px" src="./assets/NetBeans_Logo.png" alt="Apache NetBeans"> Apache NetBeans</p>
+
+                            <p>
+                                <strong>Barber Appointment System</strong>
+                                <br>
+                                Self-built MySQL database hosted on a Google Cloud VM instance. The database is access by the appointment system through JDBC.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/barberappointmentui.png" alt="Barber Appointment App UI" width="100%">
+                                    <p><i>Barber Appointment App UI</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/VisualSort/blob/main/main.py">GUI Sorting Algorithms Visualisation</a></h2>
+
+                            <p><strong>Technologies used:</strong> Python, PyGame</p>
+                            <p><strong>IDE:</strong> <img height="20px" src="./assets/pycharm-logo.png" alt="JetBrains PyCharm"> JetBrains PyCharm</p>
+
+                            <p>
+                            <strong>Visual Sort</strong>
+                                <br>
+                                App to help my classmates understand the difference between bubble sort and insert sort through visual representation that I quickly wrote during class.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/visualsortui.png" alt="Visual Sort" width="100%">
+                                    <p><i>Visual Sort UI</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/iwa-ca2">Best Albums Of All Time Web App</a></h2>
+
+                            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Node.js, RESTful API, Mongoose, React, Bootstrap 5, Heroku, MongoDB, MongoDB Atlas</p>
+                            <p><strong>IDE:</strong> <img height="20px" src="./assets/vscode.png" alt="Microsoft Visual Studio Code"> Microsoft Visual Studio Code</p>
+
+                            <p>
+                            <strong>Description:</strong>
+                                <br>
+                                Web App where the user can create their own list of Best Albums of All Time. Deployed in Heroku.
+                                <br><br>
+                                MongoDB database hosted in MongoDB Atlas. The database is accessed by the frontend through a Node.js express RESTful API using Mongoose.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/bestalbumsofalltimeui.png" alt="Best Albums Of All Time UI" width="100%">
+                                    <p><i>Best Albums Of All Time UI</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/MineSweeper">Mine Sweeper Game</a></h2>
+
+                            <p><strong>Technologies used:</strong> Java, JFrame</p>
+                            <p><strong>IDE:</strong> <img src="./assets/NetBeans_Logo.png" alt="Apache NetBeans" height="20px"> Apache NetBeans</p>
+
+                            <p>
+                            <strong>Mine Sweeper</strong>
+                            <br>
+                            My own twist on the classic game I built to learn JFrame.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/minesweeper.png" alt="Mine Sweeper" width="100%">
+                                    <p><i>Mine Sweeper</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/StarWarsWiki">Star Wars Wiki</a></h2>
+
+                            <p><strong>Technologies used:</strong> Python, PyGame, Python Requests, Python Pillow</p>
+                            <p><strong>IDE:</strong> <img src="./assets/pycharm-logo.png" alt="JetBrains PyCharm" height="20px"> JetBrains PyCharm</p>
+
+                            <p>
+                            <strong>Star Wars Wiki</strong>
+                            <br>
+                            A Wiki that retrieves information from the <a href="https://swapi.dev/" target="_blank">Star Wars API</a> and displays it for easy access.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/starwarswiki.png" alt="Star Wars Wiki" width="100%">
+                                    <p><i>Star Wars Wiki</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="project">
+                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/hangman-python">Randomly Generated Hangman Game</a></h2>
+
+                            <p><strong>Technologies used:</strong> Python, PyGame, Beautiful Soup, Python Requests</p>
+                            <p><strong>IDE:</strong> <img src="./assets/pycharm-logo.png" alt="JetBrains PyCharm" height="20px"> JetBrains PyCharm</p>
+
+                            <p>
+                            <strong>Hangman Game</strong>
+                            <br>
+                            Hangman game that randomly fetches a word from the selected source.
+                            The sources available are <a href="https://www.urbandictionary.com/random.php">Urban Dictionary</a>,
+                            <a href="https://www.vocabulary.com/lists/258109">Vocabulary</a>,
+                            <a href="https://animalcorner.org/animals/">Animal Corner</a>,
+                            and <a href="http://watchout4snakes.com/wo4snakes/Random/RandomWordPlus?level=95">Watchout 4 Snakes</a>.
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="./assets/hangman.png" alt="Hangman Game" width="100%">
+                                    <p><i>Hangman Game</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="project-container col-4 col-sm-1">
+                        <div class="project">
+                            <h2><a target="_blank" href=""></a></h2>
+
+                            <p><strong>Technologies used:</strong> </p>
+                            <p><strong>IDE:</strong> </p>
+
+                            <p>
+                            <strong>Description:</strong>
+                            <br>
+
+                            </p>
+
+                            <div class="images row">
+                                <div class="image-container col-sm">
+                                    <img src="" alt="" width="100%">
+                                    <p><i></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="topic my-story" id="my-story">
+                <h2 class="section-header">MY STORY</h2>
+
+                <div class="timeline">
+                    <div class="timeline_item timeline_right">
+                        <div class="timeline_content">
+                            <p>
+                                <strong>
+                                Head of Software Engineering
+                                <br>
+                                <i><a href="https://www.precisionsportstech.com/" target="_blank">
+                                    Precision Sports Technology
+                                </a></i>
+                                </strong>
+                            </p>
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 08/2023 - present
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Galway, Ireland
+                            </span>
+
+                            <hr class="soft-break">
+                            <p>
+                                <ul>
+                                    <li>Collaborate with leadership to define and scope tasks, ensuring alignment between sprint planning and company goals for seamless execution.</li>
+                                    <li>Manage and oversee sprint cycles, ensuring timely delivery of features and alignment with project milestones.</li>
+                                    <li>Lead design meetings for new features, coordinating with cross-functional teams (frontend, backend, data analysis, data engineering, sports science, and sales) to align on requirements, priorities and blockers.</li>
+                                    <li>Contribute to the hiring process by collaborating with leadership to define role requirements, reviewing CVs, conducting interviews, and selecting top candidates based on company needs.</li>
+                                    <li>Lead infrastructure initiatives, ensuring system scalability, reliability, and performance.</li>
+                                    <li>Design and improve the UI for a mobile app using C# with Unity and a web application using Vue.js, focusing on optimal user experience.</li>
+                                    <li>Design and implement cloud-based microservices architecture using Java Spring Boot, integrating with Azure Media Storages, Cosmos DB, and PostgreSQL.</li>
+                                    <li>Manage security and authentication protocols using Azure B2C Tenant JWT across applications and services to ensure secure access management.</li>
+                                    <li>Design and implement database changes for new features and query optimisation.</li>
+                                    <li>Support and train engineers on the tech stack, and onboard new hires.</li>
+                                    <li>Ensure best practices by creating and maintaining protocols and documentation.</li>
+                                    <li>Develop and deploy a notifications system using Azure Function Apps in ASP.NET Core, integrating real-time communication via WebSocket to enhance user engagement.</li>
+                                    <li>Develop, implement and maintain CI/CD pipeline workflows in Azure DevOps, automating deployment, testing, and monitoring to improve system reliability.</li>
+                                    <li>Support monitoring systems and incident management practices, utilising Datadog’s logging and alerting tools to maintain uptime, upgrading the product’s uptime from 85% to 99.9%.</li>
+                                </ul>
+                            </p>
+
+                            <img src="./assets/pstbestnewsportsbusinessoftheyear.jpeg" alt="Best New Sports Business of the Year" width="75%" class="centre-image">
+                            <p><i>Irish Sport Industry Awards: Best New Sports Business of the Year 2024</i></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_left">
+                        <div class="timeline_content">
+                            <p><strong>
+                                Software Development Engineering Intern
+                            <br>
+                            <i>Amazon - <a href="https://aws.amazon.com/rds/aurora/" target="_blank">Aurora</a></i>
+                            </strong></p>
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 07/2022 - 06/2023
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
+                            </span>
+
+                            <hr class="soft-break">
+                            <p>
+                                <ul>
+                                    <li>Spearhead end-to-end project management, from requirements gathering to the development fo customer-facing tools for AWS Aurora clients, including major brands like Netflix, Verizon, and BMC.</li>
+                                    <li>Engage with the internals of databases using C programming, ensuring the best user experience.</li>
+                                    <li>Collaborate with a global, cross-disciplinary team to design and deliver innovative products and services.</li>
+                                </ul>
+                            </p>
+
+                            <img src="./assets/amazoninternship.jpeg" alt="Last Day Of Internship" width="75%" class="centre-image">
+                            <p><i>My last day of internship</i></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_right">
+                        <div class="timeline_content">
+
+                            <p><strong>
+                                BSc (honours) in Information Technology
+                                <br>
+                                <img src="./assets/school.png" alt="school icon" width="20px"> <a href="https://www.cct.ie/" target="_blank"><i>CCT College Dublin</i></a>
+                            </strong></p>
+
+                            <span class="soft-text">
+                                <img src="./assets/diploma.png" alt="diploma icon" width="10px"> GPA 4.0
+                                <br>
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 09/2019 - 07/2022
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
+                            </span>
+
+                            <hr class="soft-break">
+
+                            <strong>Some modules covered:</strong>
+
+                            <ul>
+                                <li>
+                                    Data Structures & Algorithms
+                                </li>
+                                <li>
+                                    Interactive Web Applications
+                                </li>
+                                <li>
+                                    Operating Systems
+                                </li>
+                                <li>
+                                    Applied Technology Group Project
+                                </li>
+                                <li>
+                                    Advanced Databases
+                                </li>
+                                <li>
+                                    Big Data Integration
+                                </li>
+                                <li>
+                                    Object Orientation with Design Patterns
+                                </li>
+                                <li>
+                                    Advanced Switching & Routing
+                                </li>
+                                <li>
+                                    Network Forensics
+                                </li>
+                            </ul>
+
+                            <hr class="soft-break">
+
+                            <img src="./assets/award_simple.png" alt="award icon" width="20px"> 2022: <strong>Student of the Year Award</strong> for the best grades.
+                            <br>
+                            <br>
+                            <img src="./assets/studentoftheyearaward.jpeg" alt="Student Of The Year Award" width="25%" class="centre-image">
+                            <p><i>My graduation day, when I received the award.</i></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_left">
+                        <div class="timeline_content">
+
+                            <p><strong>
+                                Student Mentor
+                                <br>
+                                <i>CCT College Dublin <a href="https://www.cct.ie/cct-student-mentoring-academy/" target="_blank">Mentoring Academy</a></i>
+                            </strong></p>
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 09/2020 - 06/2022
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
+                            </span>
+
+                            <hr class="soft-break">
+
+                            <ul>
+                                <li>
+                                    Assist students from all technological programs at the college with their questions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_right">
+                        <div class="timeline_content">
+                            <p><strong>
+                                Barista Team Leader
+                                <br>
+                                <i>Bewley's Oriental Cafe</i>
+                            </strong></p>
+
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 10/2017 - 06/2022
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
+                            </span>
+
+                            <hr class="soft-break">
+                            <ul>
+                                <li>
+                                    Implement a stock management system.
+                                </li>
+                                <li>
+                                    Train new staff to follow the highest standards.
+                                </li>
+                                <li>
+                                    Organise the baristas’ schedules.
+                                </li>
+                                <li>
+                                    Manage the stock system.
+                                </li>
+                                <li>
+                                    Make high-quality beverages in a fast pace environment.
+                                </li>
+                            </ul>
+
+                            <img src="./assets/award_simple.png" alt="award icon" width="20px"> <strong>Accomplishments:</strong>
+
+                            <ul>
+                                <li>
+                                    2022: Irish Coffee In Good Spirits champion.
+                                </li>
+
+                                <li>
+                                    2022: Represented Ireland in the World Of Coffee in Milan for the Coffee in Good Spirits category.
+                                    <br>
+                                    <iframe class="centre-image" width="75%" height="300" src="https://www.youtube-nocookie.com/embed/47zvg4gu6S0" title="Irish Coffee In Good Spirits 2022 performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <p><i>My performance representing Ireland at the World's stage</i></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_left">
+                        <div class="timeline_content">
+                            <p><strong>
+                                Undergrad Researcher
+                                <br>
+                                <i>Universidade Federal do Rio Grande do Sul - <a href="https://www.ufrgs.br/lpnec/" target="_blank">Laboratory of Experimental Psychology, Neuroscience, and Behaviour (LPNeC)</a></i>
+                            </strong></p>
+
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 04/2014 - 06/2016
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Porto Alegre, Brazil
+                            </span>
+
+                            <hr class="soft-break">
+                            <ul>
+                                <li>
+                                    Assist Masters and Ph.D. students with their research by applying a battery of tests on the research subjects at schools and rehabilitation facilities.
+                                </li>
+                                <li>
+                                    Analyse the data and plot graphs. Review literature and write concise descriptions. Cowrite articles and present the results at conferences.
+                                </li>
+                            </ul>
+
+                            <hr class="soft-break">
+
+                            <strong>Some contributions:</strong>
+
+                            <ul>
+                                <li><a href="https://www.lume.ufrgs.br/handle/10183/157466">
+                                    Executive Functions, Inhibitory Control, and Aggression in Individuals with Alcohol and Crack Disorders
+                                </a></li>
+
+                                <li><a href="https://www.lume.ufrgs.br/handle/10183/130498">
+                                    Evaluation of Impulsivity, Inhibitory Control, and Alcohol Consumption in Preadolescents and Adolescents
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_right">
+                        <div class="timeline_content">
+                            <strong>
+                                BA (honours) in Psychology
+                                <br>
+                                <img src="./assets/school.png" alt="school icon" width="20px"> <i>Universidade Federal do Rio Grande do Sul</i>
+                            </strong>
+
+                            <br>
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px">  07/2013 - 06/2017
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Porto Alegre, Brazil
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item timeline_left">
+                        <div class="timeline_content">
+                            <p><strong>
+                                English Instructor
+                                <br>
+                                <i>CCAA (CCLS)</i>
+                            </strong></p>
+
+                            <span class="soft-text">
+                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 08/2016 - 08/2017 | 09/2013 - 07/2015
+                                <br>
+                                <img src="./assets/location.png" alt="location icon" width="10px"> Canoas  | Porto Alegre
+                            </span>
+
+                            <hr class="soft-break">
+                            <ul>
+                                <li>
+                                    Teach the English language to students of all levels and ages.
+                                </li>
+                                <li>
+                                    Prepare classes, homework, tests, and online extra activities on CCAA’s app.
+                                </li>
+                                <li>
+                                    Prepare long-term teaching schemes for premium individual students.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic further-training" id="further-training">
+                <h1 class="section-header">TRAINING</h1>
+
+                <p>
+                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Diploma in Cybersecurity Fundamentals (CCT College Dublin) - 2023
+                </p>
+                <p>
+                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Supervised Machine Learning (AWS Machine Learning Academy) - 2022
+                </p>
+                <p>
+                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Diploma in Python Programming (CCT College Dublin) - 2021
+                </p>
+                <p>
+                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> AZ-900: Microsoft Azure Fundamentals (CCT College Dublin) - 2020
+                </p>
+
+            </div>
+
+            <div class="topic skills-and-abilities" id="skills-and-abilities">
+                <h1 class="section-header">SKILLS AND ABILITIES</h1>
+
+                <div class="row">
+                    <div class="technical col>
+                        <dl class="text-left">
+                            <dt class="list-header"><strong>TECHNICAL EXPERTISE</strong></dt>
+                            <dd class="px-4 py-2"><strong>Programming Languages</strong>
+                                <p>
+                                    Bash Script, C, C++, C#, Java, JavaScript, PHP, Python, TypeScript
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>CI/CD & Automation</strong>
+                                <p>
+                                    Azure DevOps, Unit Testing, Regression Testing, E2E Testing, Build Automation (Maven, GNU Make)
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Backend Frameworks & Microservices</strong>
+                                <p>
+                                    Java Spring Boot, Express.js
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Frontend Frameworks</strong>
+                                <p>
+                                    Vue.js, React
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Python Libraries/Interfaces</strong>
+                                <p>
+                                    Pandas, NumPy, TensorFlow, Matplotlib, PyGame, Python Requests, Python Pillow, Python Beautiful Soup, Tkinter
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Game Development</strong>
+                                <p>
+                                    Unity, Unreal
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Web Development</strong>
+                                <p>
+                                    HTML, CSS, Bootstrap, Tailwind
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Databases</strong>
+                                <p>
+                                    PostgreSQL, MySQL, Cosmos DB, MongoDB, AWS DynamoDB, Oracle Database, SQLite
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Cloud Platforms</strong>
+                                <p>
+                                    Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), Heroku
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Runtime Environments</strong>
+                                <p>
+                                    JRE, Node, .NET
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Version Control & Collaboration</strong>
+                                <p>
+                                    Git, GitHub, AWS Code Commit, Unity Version Control/Plastic SCM, JIRA, Notion
+                                </p>
+                            </dd>
+                            <dd class="px-4 py-2"><strong>Parsers & Tools</strong>
+                                <p>
+                                    ANTLR 4, GNU Bison, Flex
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="professional col">
+                        <dl class="text-left">
+                            <dt class="list-header"><strong>ADDITIONAL SKILLS</strong></dt>
+                            <dd class="px-4 py-2">Strong communication, customer service, and leadership abilities.
+                            <dd class="px-4 py-2">Problem-solving, troubleshooting, and technical decision-making expertise.
+                            <dd class="px-4 py-2">Logical and analytical thinking, with a keen attention to detail.
+                            <dd class="px-4 py-2">Negotiation and cross-functional team collaboration.
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="topic social-media text-center row" id="socials">
+
+                <div class="social-logo col-4">
+                    <a href="https://github.com/JFelipeFloresS" target="_blank"><img src="./assets/github.png" alt="GITHUB" width="50px"></a>
+                </div>
+                <div class="social-logo col-4">
+                    <a href="https://www.linkedin.com/in/jose-felipe-flores-da-silva/" target="_blank"><img src="./assets/linkedin.png" alt="LINKED IN" width="50px"></a>
+                </div>
+                <div class="social-logo col-4">
+                    <a href="mailto:josefelipefloress@gmail.com" target="_blank"><img src="./assets/mail.png" alt="email" width="50px"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./script/contact.js"></script>
+<script src="./script/logo.js"></script>
+<script src="./script/skills.js"></script>
+</html>
