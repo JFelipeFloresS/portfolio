@@ -2,814 +2,652 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <script src="./script/timeline.js"></script>
-    <!-- <script src="../private/DB/db.js"></script> -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <meta name="description" content="Felipe Flores, Head of Software Engineering at KinetikIQ, based in Dublin.">
+    <meta name="theme-color" content="#0b0d12">
     <title>Felipe Flores</title>
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-    <nav class="navbar navbar-expand-sm navbar-dark" width="100%" id="top-bar" style="background-color: rgba(23, 162, 184, 1);">
-        <a class="navbar-brand mainlogo" href="./index.html"><img id="mainlogo" src="./assets/favicon.png" alt="FELIPE FLORES" width="25px"></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation" style="border: none !important; padding: none;"><img src="./assets/hamburger.png" alt="=" width="30px"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#my-story">STORY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#further-training">TRAINING</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills-and-abilities">TECHNOLOGIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#socials">LINKS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link contact-me" id="contact-me" href="mailto:josefelipefloress@gmail.com">MAIL ME</a>
-                </li>
-                <div class="me-container">
-                    <img src="./assets/me.png" alt="Me" width="50px" class="me centre-image" id="me"/>
+    <header class="nav" id="nav">
+        <a class="nav__brand" href="#top" aria-label="Back to top">
+            <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 108 108" width="52" height="52" aria-hidden="true">
+              <defs>
+                <linearGradient id="ff-grad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#22d3ee"/>
+                  <stop offset="1" stop-color="#8b5cf6"/>
+                </linearGradient>
+                <mask id="ff-gap" maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120">
+                  <rect x="-10" y="-10" width="120" height="120" fill="#fff"/>
+                  <path d="M27.4 77.53Q24.81 77.53 23.58 76Q22.34 74.48 22.77 71.72L27.46 41.97Q27.86 39.52 29.32 38.26Q30.79 37 33.27 37H51.81Q53.86 37 54.95 37.85Q56.03 38.7 56.03 40.27Q56.03 42.4 54.79 43.72Q53.55 45.03 51.29 45.03H37.41L36.14 53.1H48Q50.06 53.1 51.14 53.95Q52.22 54.8 52.22 56.37Q52.22 58.5 50.98 59.82Q49.74 61.13 47.48 61.13H34.87L33.06 72.54Q32.27 77.53 27.4 77.53ZM57.63 84.53Q55.03 84.53 53.8 83Q52.57 81.48 53 78.72L57.69 48.97Q58.08 46.52 59.55 45.26Q61.01 44 63.5 44H82.03Q84.09 44 85.17 44.85Q86.25 45.7 86.25 47.27Q86.25 49.4 85.01 50.72Q83.77 52.03 81.51 52.03H67.64L66.36 60.1H78.22Q80.28 60.1 81.36 60.95Q82.45 61.8 82.45 63.37Q82.45 65.5 81.21 66.82Q79.96 68.13 77.7 68.13H65.09L63.28 79.54Q62.5 84.53 57.63 84.53Z" fill="#000" stroke="#000" stroke-width="9" stroke-linejoin="round"/>
+                </mask>
+              </defs>
+              <polygon points="74,3 5,87 96,95" fill="none" stroke="url(#ff-grad)" stroke-width="6" stroke-linejoin="round" mask="url(#ff-gap)"/>
+              <path fill="currentColor" stroke="currentColor" d="M27.4 77.53Q24.81 77.53 23.58 76Q22.34 74.48 22.77 71.72L27.46 41.97Q27.86 39.52 29.32 38.26Q30.79 37 33.27 37H51.81Q53.86 37 54.95 37.85Q56.03 38.7 56.03 40.27Q56.03 42.4 54.79 43.72Q53.55 45.03 51.29 45.03H37.41L36.14 53.1H48Q50.06 53.1 51.14 53.95Q52.22 54.8 52.22 56.37Q52.22 58.5 50.98 59.82Q49.74 61.13 47.48 61.13H34.87L33.06 72.54Q32.27 77.53 27.4 77.53ZM57.63 84.53Q55.03 84.53 53.8 83Q52.57 81.48 53 78.72L57.69 48.97Q58.08 46.52 59.55 45.26Q61.01 44 63.5 44H82.03Q84.09 44 85.17 44.85Q86.25 45.7 86.25 47.27Q86.25 49.4 85.01 50.72Q83.77 52.03 81.51 52.03H67.64L66.36 60.1H78.22Q80.28 60.1 81.36 60.95Q82.45 61.8 82.45 63.37Q82.45 65.5 81.21 66.82Q79.96 68.13 77.7 68.13H65.09L63.28 79.54Q62.5 84.53 57.63 84.53Z" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <span>Felipe Flores</span>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+        <nav class="nav__links" id="nav-links">
+            <a href="#kinetikiq">KinetikIQ</a>
+            <a href="#projects">Projects</a>
+            <a href="#story">Story</a>
+            <a href="#skills">Skills</a>
+            <a class="btn btn--small" href="mailto:josefelipefloress@gmail.com">Get in touch</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero container">
+            <div class="hero__text reveal">
+                <p class="eyebrow"><span class="pulse"></span> Dublin, Ireland</p>
+                <h1>Building software that<br><span class="gradient-text">understands movement.</span></h1>
+                <p class="hero__lead">
+                    I'm Felipe, a Brazilian engineer who has lived in Ireland since 2017 and is now based in Dublin.
+                    I'm Head of Software Engineering at <a href="https://www.kinetikiq.com/" target="_blank" rel="noopener"><strong>KinetikIQ</strong></a>,
+                    where we build a sensor-free movement-analysis platform used by professional sports teams.
+                    Before that I was an SDE intern on the <a href="https://aws.amazon.com/rds/aurora/" target="_blank" rel="noopener">Aurora</a> team at AWS,
+                    and I'm now doing a part-time M.Sc. in Software Architecture &amp; Design.
+                </p>
+                <div class="hero__cta">
+                    <a class="btn" href="#kinetikiq">See what I'm building</a>
+                    <a class="btn btn--ghost" href="#story">My story</a>
                 </div>
-            </ul>
-        </div>
-    </nav>
-
-
-    <div class="text-center">
-
-        <div class="main-content text-left">
-            <div class="topic about">
-                <p class="opening">
-                    Tech brazilian living in Ireland since 2017.
-                    <br>
-                    Head of Software Engineering at <a href="https://www.precisionsportstech.com/" target="_blank">Precision Sports Technology</a>
-                    <br>
-                    Former Software Development Engineering Intern at Amazon within the <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html" target="_blank">Aurora</a> team at AWS.
-                </p>
-                <hr>
-                <p class="opening">
-                    Detail-oriented and result-driven.
-                    <br>
-                    Proactive, driven, innovative and diligent.
-                    <br>
-                    Hands-on experience in software development, deployment, and maintenance.
-                </p>
+                <ul class="hero__stats">
+                    <li><strong>99.9%</strong><span>platform uptime, up from 85%</span></li>
+                    <li><strong>4.0/4.0</strong><span>GPA, Student of the Year</span></li>
+                    <li><strong>2024</strong><span>Best New Sports Business award</span></li>
+                </ul>
             </div>
-
-            <div class="topic projects-container" id="projects">
-                <h1 class="section-header">PROJECTS</h1>
-
-                <div class="projects row">
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project" id="unity-app">
-                            <h2>Unity/C# Mobile Application</h2>
-
-                            <p><strong>Technologies used:</strong> Unity, C#, MSAL, Azure AD B2C</p>
-                            <p><strong>IDE:</strong> <img src="./assets/rider.png" alt="JetBrains Rider" height="20px"> JetBrains Rider/<img src="./assets/unity.png" alt="Unity Engine" height="20px"> Unity Engine</p>
-
-                            <p>
-                                <strong>Unity/C# Mobile App</strong>
-                                <br>
-                                <p>Application for iOS built with Unity 3D for motion capture of exercises for both athletes and physiotherapy patients.</p>
-                                <p>User authentication through Azure AD B2C Tenant for app usage and API requests authentication.</p>
-                                <p>Deployed to App Store as KinetikIQ.</p>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project" id="vue-application">
-                            <h2>Vue Web Application</h2>
-
-                            <p><strong>Technologies used:</strong> JavaScript, Vue, Azure Static Web App, GitHub Actions, Staging environments, HTML, CSS, TailWind, MSAL, Azure AD B2C, eCharts</p>
-                            <p><strong>IDE:</strong> <img src="./assets/webstorm.png" alt="JetBrains WebStorm" height="20px"> JetBrains WebStorm</p>
-
-                            <p>
-                                <strong>Vue Web App</strong>
-                                <br>
-                                <p>Web application to display the data retrieved with the iOS application and processed through Databricks.</p>
-                                <p>User authentication through Azure AD B2C Tenant for app usage and API requests authentication.</p>
-                                <p>Deployed in Azure as a Static Web App through GitHub actions and Azure DevOps pipeline.</p>
-                                <p>Deployment in steps: unit tests -> deployment to staging environment -> integration tests -> deployment to the pre production environment -> integration tests -> deployment to the production environment</p>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project" id="java-services">
-                            <h2>Java Spring Microservices</h2>
-
-                            <p><strong>Technologies used:</strong> Java Spring Boot, Azure Front Door, Azure App Service, Azure App Service Plan, Azure DevOps Pipelines, PostgreSQL, Cosmos DB, Azure Blob Storage</p>
-                            <p><strong>IDE:</strong> <img src="./assets/intellij.png" alt="JetBrains IntelliJ" height="20px"> JetBrains IntelliJ</p>
-
-                            <p>
-                                <strong>Java Spring Microservices</strong>
-                                <br>
-                                <p>Part of the microservices architecture.</p>
-                                <div>
-                                    Initially a single API connected to PostgreSQL and Azure Blob Storage. Expanded by myself into currently 3 diverse services - 2 Java Spring and 1 ASP .NET Core.
-                                    <ul>
-                                        <li>
-                                            Connection with PostgreSQL and Azure Blob Storage:
-                                            <ul>
-                                                <li>A service that is connected to an Azure PostgreSQL Flexible Server and different containers of a number of Azure Blob Storage Accounts. The containers store different types of files, including images, videos and csv files.</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Connection with Cosmos DB:
-                                            <ul>
-                                                <li>A service that is connected to a NoSQL Azure Cosmos DB.</li>
-                                                <li>The Cosmos DB is populated by a Databricks pipeline.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project" id="dotnet-services">
-                            <h2>ASP .NET Core Notifications Microservice/Web Socket</h2>
-
-                            <p><strong>Technologies used:</strong> ASP .NET Core, </p>
-                            <p><strong>IDE:</strong> <img src="./assets/rider.png" alt="JetBrains Rider" height="20px"> JetBrains Rider</p>
-
-                            <p>
-                                <strong>ASP .NET Core Notifications Microservice/Web Socket</strong>
-                                <br>
-                                <p>Part of the microservices architecture.</p>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            Web Socket:
-                                            <ul>
-                                                <li>A service that has a Web Socket connection to a both a Vue.js and a Unity/C# mobile applications to deliver timely notifications.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project" id="apg-cat">
-                            <h2>Aurora PostgreSQL Compatibility Assessment Tool Extension</h2>
-
-                            <p><strong>Technologies used:</strong> C, Bash script, AWS S3, AWS CodeCommit, AWS EC2, a number of internal tools for AWS, PL/pgSQL, SQL scripting</p>
-                            <p><strong>IDE:</strong> <img src="./assets/vscode.png" alt="Microsoft Visual Studio Code" height="20px"> Microsoft Visual Studio Code</p>
-
-                            <p>
-                                <strong>Compatibility Assessment Tool</strong>
-                                <br>
-                            Extension for PostgreSQL for customers to assess the compatibility of their Aurora application (including functions, procedures, triggers, tables etc.) with Aurora Limitless Database.
-                            <br><br>
-                            UX: Customers install an extension in their application and call a function to request the assessment mode to be enabled. AWS then performs the necessary actions to enable the assessment asynchronously. The assessment is done by the Assessment Tool extension for PostgreSQL in a separate database, finally uploading the results as a document to an S3 bucket.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/apgcat.png" alt="Aurora PostgreSQL CAT" width="100%">
-                                    <p><i>Aurora PostgreSQL CAT</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/leitefrancisco/AppFinal">Cross-platform social media mobile app with a built-in online game</a></h2>
-
-                            <p><strong>Technologies used:</strong> C#, Xamarin, Unity, MongoDB (Self-built), JavaScript, Node.js, Express, RESTful API, Mongoose, EC2, AWS</p>
-                            <p><strong>IDE:</strong> <img height="20px" src="./assets/Microsoft_Visual_Studio_2022.svg" alt="Microsoft Visual Studio"> Microsoft Visual Studio</p>
-
-                            <p>
-                                <strong>Indie Station</strong>
-                                <br>
-                                This was my final year project for my BSc in Information Technology at CCT College Dublin.
-                                <br><br>
-                                Self-built MongoDB database hosted on an EC2 instance on AWS. The database is accessed by the mobile app through a Node.js express RESTful API using Mongoose.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/indiestationui.png" alt="Indie Station UI" width="100%%">
-                                    <p><i>Indie Station UI</i></p>
-                                </div>
-                                <div class="image-container col-sm">
-                                    <img src="./assets/treasurehunterui.png" alt="Treasure Hunter UI" width="100%%">
-                                    <p><i>Treasure Hunter Online Game UI</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/GUI-Programming-CA1">GUI appointment system for barbers and customers</a></h2>
-
-                            <p><strong>Technologies used:</strong> Java, Java Swing, JDBC, MySQL (Self-built), Google Cloud Platform</p>
-                            <p><strong>IDE:</strong> <img height="20px" src="./assets/NetBeans_Logo.png" alt="Apache NetBeans"> Apache NetBeans</p>
-
-                            <p>
-                                <strong>Barber Appointment System</strong>
-                                <br>
-                                Self-built MySQL database hosted on a Google Cloud VM instance. The database is access by the appointment system through JDBC.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/barberappointmentui.png" alt="Barber Appointment App UI" width="100%">
-                                    <p><i>Barber Appointment App UI</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/VisualSort/blob/main/main.py">GUI Sorting Algorithms Visualisation</a></h2>
-
-                            <p><strong>Technologies used:</strong> Python, PyGame</p>
-                            <p><strong>IDE:</strong> <img height="20px" src="./assets/pycharm-logo.png" alt="JetBrains PyCharm"> JetBrains PyCharm</p>
-
-                            <p>
-                            <strong>Visual Sort</strong>
-                                <br>
-                                App to help my classmates understand the difference between bubble sort and insert sort through visual representation that I quickly wrote during class.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/visualsortui.png" alt="Visual Sort" width="100%">
-                                    <p><i>Visual Sort UI</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/iwa-ca2">Best Albums Of All Time Web App</a></h2>
-
-                            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Node.js, RESTful API, Mongoose, React, Bootstrap 5, Heroku, MongoDB, MongoDB Atlas</p>
-                            <p><strong>IDE:</strong> <img height="20px" src="./assets/vscode.png" alt="Microsoft Visual Studio Code"> Microsoft Visual Studio Code</p>
-
-                            <p>
-                            <strong>Description:</strong>
-                                <br>
-                                Web App where the user can create their own list of Best Albums of All Time. Deployed in Heroku.
-                                <br><br>
-                                MongoDB database hosted in MongoDB Atlas. The database is accessed by the frontend through a Node.js express RESTful API using Mongoose.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/bestalbumsofalltimeui.png" alt="Best Albums Of All Time UI" width="100%">
-                                    <p><i>Best Albums Of All Time UI</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/MineSweeper">Mine Sweeper Game</a></h2>
-
-                            <p><strong>Technologies used:</strong> Java, JFrame</p>
-                            <p><strong>IDE:</strong> <img src="./assets/NetBeans_Logo.png" alt="Apache NetBeans" height="20px"> Apache NetBeans</p>
-
-                            <p>
-                            <strong>Mine Sweeper</strong>
-                            <br>
-                            My own twist on the classic game I built to learn JFrame.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/minesweeper.png" alt="Mine Sweeper" width="100%">
-                                    <p><i>Mine Sweeper</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/StarWarsWiki">Star Wars Wiki</a></h2>
-
-                            <p><strong>Technologies used:</strong> Python, PyGame, Python Requests, Python Pillow</p>
-                            <p><strong>IDE:</strong> <img src="./assets/pycharm-logo.png" alt="JetBrains PyCharm" height="20px"> JetBrains PyCharm</p>
-
-                            <p>
-                            <strong>Star Wars Wiki</strong>
-                            <br>
-                            A Wiki that retrieves information from the <a href="https://swapi.dev/" target="_blank">Star Wars API</a> and displays it for easy access.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/starwarswiki.png" alt="Star Wars Wiki" width="100%">
-                                    <p><i>Star Wars Wiki</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="project">
-                            <h2><a target="_blank" href="https://github.com/JFelipeFloresS/hangman-python">Randomly Generated Hangman Game</a></h2>
-
-                            <p><strong>Technologies used:</strong> Python, PyGame, Beautiful Soup, Python Requests</p>
-                            <p><strong>IDE:</strong> <img src="./assets/pycharm-logo.png" alt="JetBrains PyCharm" height="20px"> JetBrains PyCharm</p>
-
-                            <p>
-                            <strong>Hangman Game</strong>
-                            <br>
-                            Hangman game that randomly fetches a word from the selected source.
-                            The sources available are <a href="https://www.urbandictionary.com/random.php">Urban Dictionary</a>,
-                            <a href="https://www.vocabulary.com/lists/258109">Vocabulary</a>,
-                            <a href="https://animalcorner.org/animals/">Animal Corner</a>,
-                            and <a href="http://watchout4snakes.com/wo4snakes/Random/RandomWordPlus?level=95">Watchout 4 Snakes</a>.
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="./assets/hangman.png" alt="Hangman Game" width="100%">
-                                    <p><i>Hangman Game</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="project-container col-4 col-sm-1">
-                        <div class="project">
-                            <h2><a target="_blank" href=""></a></h2>
-
-                            <p><strong>Technologies used:</strong> </p>
-                            <p><strong>IDE:</strong> </p>
-
-                            <p>
-                            <strong>Description:</strong>
-                            <br>
-
-                            </p>
-
-                            <div class="images row">
-                                <div class="image-container col-sm">
-                                    <img src="" alt="" width="100%">
-                                    <p><i></i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+            <div class="hero__photo reveal">
+                <div class="hero__ring">
+                    <svg class="hero__tri" viewBox="0 0 100 100" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="tri-stroke" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" class="tri-stop-a"/>
+                                <stop offset="1" class="tri-stop-b"/>
+                            </linearGradient>
+                            <radialGradient id="tri-fill" cx="0.62" cy="0.45" r="0.7">
+                                <stop offset="0" class="tri-fill-a"/>
+                                <stop offset="1" class="tri-fill-b"/>
+                            </radialGradient>
+                        </defs>
+                        <polygon points="71,8 3,85 97,93" fill="url(#tri-fill)" stroke="url(#tri-stroke)" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="hero__cut"><img src="./assets/me-cutout.webp" alt="Portrait of Felipe Flores" width="640" height="775"></div>
                 </div>
+                <div class="hero__chip hero__chip--a">Java · C# · Vue</div>
+                <div class="hero__chip hero__chip--b">Azure · AI · Unity</div>
             </div>
-            <div class="topic my-story" id="my-story">
-                <h2 class="section-header">MY STORY</h2>
+        </section>
 
-                <div class="timeline">
-                    <div class="timeline_item timeline_right">
-                        <div class="timeline_content">
-                            <p>
-                                <strong>
-                                Head of Software Engineering
-                                <br>
-                                <i><a href="https://www.precisionsportstech.com/" target="_blank">
-                                    Precision Sports Technology
-                                </a></i>
-                                </strong>
-                            </p>
+        <!-- KINETIKIQ -->
+        <section class="section container" id="kinetikiq">
+            <header class="section__head reveal">
+                <p class="eyebrow">Now · 2023 to present</p>
+                <h2>KinetikIQ</h2>
+                <p class="section__lead">
+                    <a href="https://www.kinetikiq.com/" target="_blank" rel="noopener">KinetikIQ</a>
+                    builds a movement-analysis platform that uses the LiDAR depth camera in an iPhone or iPad Pro, plus computer vision,
+                    to capture how athletes and patients move, with no wearables. Coaches, sports scientists and physios get objective
+                    metrics and real-time feedback on technique, and professional sports teams use it.
+                </p>
+            </header>
 
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 08/2023 - present
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Galway, Ireland
-                            </span>
+            <h3 class="subhead reveal">What I do</h3>
+            <div class="roles">
+                <article class="role reveal">
+                    <span class="role__num">01</span>
+                    <h3>Lead the team</h3>
+                    <p>I lead a cross-functional team of software, data and ML engineers. That means hiring and onboarding, regular 1:1s and career plans, and mentoring, plus a culture of code review, documentation and knowledge-sharing sessions.</p>
+                </article>
+                <article class="role reveal">
+                    <span class="role__num">02</span>
+                    <h3>Plan &amp; deliver</h3>
+                    <p>With leadership and the commercial team, I turn customer needs and company goals into a roadmap. I scope projects, prioritise by value against effort, and run two-week sprints from planning to review. I also work with sports science on studies that validate our metrics against lab-grade measurements.</p>
+                </article>
+                <article class="role reveal">
+                    <span class="role__num">03</span>
+                    <h3>Architect &amp; build</h3>
+                    <p>I own the technical direction across the iOS capture app, web dashboard, APIs, data pipeline and Azure infrastructure, and I stay hands-on: designing features, reviewing code and shipping. I've also brought AI-assisted development into the team's day-to-day workflow.</p>
+                </article>
+            </div>
 
-                            <hr class="soft-break">
-                            <p>
-                                <ul>
-                                    <li>Collaborate with leadership to define and scope tasks, ensuring alignment between sprint planning and company goals for seamless execution.</li>
-                                    <li>Manage and oversee sprint cycles, ensuring timely delivery of features and alignment with project milestones.</li>
-                                    <li>Lead design meetings for new features, coordinating with cross-functional teams (frontend, backend, data analysis, data engineering, sports science, and sales) to align on requirements, priorities and blockers.</li>
-                                    <li>Contribute to the hiring process by collaborating with leadership to define role requirements, reviewing CVs, conducting interviews, and selecting top candidates based on company needs.</li>
-                                    <li>Lead infrastructure initiatives, ensuring system scalability, reliability, and performance.</li>
-                                    <li>Design and improve the UI for a mobile app using C# with Unity and a web application using Vue.js, focusing on optimal user experience.</li>
-                                    <li>Design and implement cloud-based microservices architecture using Java Spring Boot, integrating with Azure Media Storages, Cosmos DB, and PostgreSQL.</li>
-                                    <li>Manage security and authentication protocols using Azure B2C Tenant JWT across applications and services to ensure secure access management.</li>
-                                    <li>Design and implement database changes for new features and query optimisation.</li>
-                                    <li>Support and train engineers on the tech stack, and onboard new hires.</li>
-                                    <li>Ensure best practices by creating and maintaining protocols and documentation.</li>
-                                    <li>Develop and deploy a notifications system using Azure Function Apps in ASP.NET Core, integrating real-time communication via WebSocket to enhance user engagement.</li>
-                                    <li>Develop, implement and maintain CI/CD pipeline workflows in Azure DevOps, automating deployment, testing, and monitoring to improve system reliability.</li>
-                                    <li>Support monitoring systems and incident management practices, utilising Datadog’s logging and alerting tools to maintain uptime, upgrading the product’s uptime from 85% to 99.9%.</li>
-                                </ul>
-                            </p>
-
-                            <img src="./assets/pstbestnewsportsbusinessoftheyear.jpeg" alt="Best New Sports Business of the Year" width="75%" class="centre-image">
-                            <p><i>Irish Sport Industry Awards: Best New Sports Business of the Year 2024</i></p>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_left">
-                        <div class="timeline_content">
-                            <p><strong>
-                                Software Development Engineering Intern
-                            <br>
-                            <i>Amazon - <a href="https://aws.amazon.com/rds/aurora/" target="_blank">Aurora</a></i>
-                            </strong></p>
-
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 07/2022 - 06/2023
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
-                            </span>
-
-                            <hr class="soft-break">
-                            <p>
-                                <ul>
-                                    <li>Spearhead end-to-end project management, from requirements gathering to the development fo customer-facing tools for AWS Aurora clients, including major brands like Netflix, Verizon, and BMC.</li>
-                                    <li>Engage with the internals of databases using C programming, ensuring the best user experience.</li>
-                                    <li>Collaborate with a global, cross-disciplinary team to design and deliver innovative products and services.</li>
-                                </ul>
-                            </p>
-
-                            <img src="./assets/amazoninternship.jpeg" alt="Last Day Of Internship" width="75%" class="centre-image">
-                            <p><i>My last day of internship</i></p>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_right">
-                        <div class="timeline_content">
-
-                            <p><strong>
-                                BSc (honours) in Information Technology
-                                <br>
-                                <img src="./assets/school.png" alt="school icon" width="20px"> <a href="https://www.cct.ie/" target="_blank"><i>CCT College Dublin</i></a>
-                            </strong></p>
-
-                            <span class="soft-text">
-                                <img src="./assets/diploma.png" alt="diploma icon" width="10px"> GPA 4.0
-                                <br>
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 09/2019 - 07/2022
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
-                            </span>
-
-                            <hr class="soft-break">
-
-                            <strong>Some modules covered:</strong>
-
-                            <ul>
-                                <li>
-                                    Data Structures & Algorithms
-                                </li>
-                                <li>
-                                    Interactive Web Applications
-                                </li>
-                                <li>
-                                    Operating Systems
-                                </li>
-                                <li>
-                                    Applied Technology Group Project
-                                </li>
-                                <li>
-                                    Advanced Databases
-                                </li>
-                                <li>
-                                    Big Data Integration
-                                </li>
-                                <li>
-                                    Object Orientation with Design Patterns
-                                </li>
-                                <li>
-                                    Advanced Switching & Routing
-                                </li>
-                                <li>
-                                    Network Forensics
-                                </li>
-                            </ul>
-
-                            <hr class="soft-break">
-
-                            <img src="./assets/award_simple.png" alt="award icon" width="20px"> 2022: <strong>Student of the Year Award</strong> for the best grades.
-                            <br>
-                            <br>
-                            <img src="./assets/studentoftheyearaward.jpeg" alt="Student Of The Year Award" width="25%" class="centre-image">
-                            <p><i>My graduation day, when I received the award.</i></p>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_left">
-                        <div class="timeline_content">
-
-                            <p><strong>
-                                Student Mentor
-                                <br>
-                                <i>CCT College Dublin <a href="https://www.cct.ie/cct-student-mentoring-academy/" target="_blank">Mentoring Academy</a></i>
-                            </strong></p>
-
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 09/2020 - 06/2022
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
-                            </span>
-
-                            <hr class="soft-break">
-
-                            <ul>
-                                <li>
-                                    Assist students from all technological programs at the college with their questions.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_right">
-                        <div class="timeline_content">
-                            <p><strong>
-                                Barista Team Leader
-                                <br>
-                                <i>Bewley's Oriental Cafe</i>
-                            </strong></p>
+            <h3 class="subhead reveal">Highlights</h3>
+            <div class="bento">
+                <article class="card card--feature reveal">
+                    <h3>From a phone camera to movement metrics</h3>
+                    <p>
+                        Each recording goes from the iOS app into a Databricks pipeline that turns 3D skeleton data into
+                        movement metrics. Spring Boot APIs then serve those metrics to the web dashboard from Cosmos DB and PostgreSQL.
+                        We're now rebuilding how metrics are calculated and rolling the new version out gradually behind feature flags.
+                    </p>
+                    <ul class="chips"><li>LiDAR</li><li>Databricks</li><li>Spring Boot</li><li>Cosmos DB</li><li>PostgreSQL</li><li>Azure</li></ul>
+                </article>
 
 
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 10/2017 - 06/2022
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Dublin, Ireland
-                            </span>
+                <article class="card reveal">
+                    <h3>Dashboard redesign</h3>
+                    <p>A redesigned web dashboard with new metric views, drill-downs and live leaderboards that turn results into friendly competition between athletes.</p>
+                    <ul class="chips"><li>Vue</li><li>Tailwind</li><li>eCharts</li></ul>
+                </article>
 
-                            <hr class="soft-break">
-                            <ul>
-                                <li>
-                                    Implement a stock management system.
-                                </li>
-                                <li>
-                                    Train new staff to follow the highest standards.
-                                </li>
-                                <li>
-                                    Organise the baristas’ schedules.
-                                </li>
-                                <li>
-                                    Manage the stock system.
-                                </li>
-                                <li>
-                                    Make high-quality beverages in a fast pace environment.
-                                </li>
-                            </ul>
+                <article class="card reveal">
+                    <h3>Feature flags</h3>
+                    <p>An in-house flag system, so each feature can be tested internally and released on its own instead of in one big release.</p>
+                    <ul class="chips"><li>Java Spring</li><li>PostgreSQL</li><li>Vue</li></ul>
+                </article>
 
-                            <img src="./assets/award_simple.png" alt="award icon" width="20px"> <strong>Accomplishments:</strong>
+                <article class="card reveal">
+                    <h3>Mobile capture app</h3>
+                    <p>The iOS app that records and analyses movement in real time. Upgraded to Unity 6, with automated tests covering the recording flow.</p>
+                    <ul class="chips"><li>Unity 6</li><li>C#</li><li>Body tracking</li></ul>
+                </article>
 
-                            <ul>
-                                <li>
-                                    2022: Irish Coffee In Good Spirits champion.
-                                </li>
+                <article class="card reveal">
+                    <h3>Security &amp; identity</h3>
+                    <p>Passwordless, identity-based access from services to databases with Microsoft Entra ID and managed identities, secrets in Key Vault, and regular security reviews.</p>
+                    <ul class="chips"><li>Entra ID</li><li>Key Vault</li><li>Azure AD B2C</li><li>JWT</li></ul>
+                </article>
 
-                                <li>
-                                    2022: Represented Ireland in the World Of Coffee in Milan for the Coffee in Good Spirits category.
-                                    <br>
-                                    <iframe class="centre-image" width="75%" height="300" src="https://www.youtube-nocookie.com/embed/47zvg4gu6S0" title="Irish Coffee In Good Spirits 2022 performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                    <p><i>My performance representing Ireland at the World's stage</i></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <article class="card reveal">
+                    <h3>Versioned database migrations</h3>
+                    <p>Schema changes now go through versioned, reviewable migrations with a clear history, deployed through gated staging and production environments.</p>
+                    <ul class="chips"><li>Flyway</li><li>PostgreSQL</li><li>Azure DevOps</li></ul>
+                </article>
 
-                    <div class="timeline_item timeline_left">
-                        <div class="timeline_content">
-                            <p><strong>
-                                Undergrad Researcher
-                                <br>
-                                <i>Universidade Federal do Rio Grande do Sul - <a href="https://www.ufrgs.br/lpnec/" target="_blank">Laboratory of Experimental Psychology, Neuroscience, and Behaviour (LPNeC)</a></i>
-                            </strong></p>
+                <article class="card reveal">
+                    <h3>Real-time notifications</h3>
+                    <p>A WebSocket notification service that pushes timely updates to both the web dashboard and the mobile app.</p>
+                    <ul class="chips"><li>ASP.NET Core</li><li>Azure Functions</li><li>WebSockets</li></ul>
+                </article>
 
+                <article class="card reveal">
+                    <h3>Automated testing</h3>
+                    <p>End-to-end browser tests for the dashboard and automated Unity tests for the app, so regressions are caught before they reach customers.</p>
+                    <ul class="chips"><li>Playwright</li><li>Unity Test Framework</li></ul>
+                </article>
 
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 04/2014 - 06/2016
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Porto Alegre, Brazil
-                            </span>
+                <article class="card reveal">
+                    <h3>CI/CD &amp; observability</h3>
+                    <p>
+                        Staged pipelines (unit tests → staging → integration tests → pre-prod → production) with approval gates,
+                        plus Datadog logging, monitoring and alerting. Together these took platform uptime from 85% to 99.9%.
+                    </p>
+                    <ul class="chips"><li>Azure DevOps</li><li>GitHub Actions</li><li>Datadog</li><li>Azure Front Door</li><li>App Service</li></ul>
+                </article>
+            </div>
+        </section>
 
-                            <hr class="soft-break">
-                            <ul>
-                                <li>
-                                    Assist Masters and Ph.D. students with their research by applying a battery of tests on the research subjects at schools and rehabilitation facilities.
-                                </li>
-                                <li>
-                                    Analyse the data and plot graphs. Review literature and write concise descriptions. Cowrite articles and present the results at conferences.
-                                </li>
-                            </ul>
-
-                            <hr class="soft-break">
-
-                            <strong>Some contributions:</strong>
-
-                            <ul>
-                                <li><a href="https://www.lume.ufrgs.br/handle/10183/157466">
-                                    Executive Functions, Inhibitory Control, and Aggression in Individuals with Alcohol and Crack Disorders
-                                </a></li>
-
-                                <li><a href="https://www.lume.ufrgs.br/handle/10183/130498">
-                                    Evaluation of Impulsivity, Inhibitory Control, and Alcohol Consumption in Preadolescents and Adolescents
-                                </a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_right">
-                        <div class="timeline_content">
-                            <strong>
-                                BA (honours) in Psychology
-                                <br>
-                                <img src="./assets/school.png" alt="school icon" width="20px"> <i>Universidade Federal do Rio Grande do Sul</i>
-                            </strong>
-
-                            <br>
-
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px">  07/2013 - 06/2017
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Porto Alegre, Brazil
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="timeline_item timeline_left">
-                        <div class="timeline_content">
-                            <p><strong>
-                                English Instructor
-                                <br>
-                                <i>CCAA (CCLS)</i>
-                            </strong></p>
-
-                            <span class="soft-text">
-                                <img src="./assets/calendar.png" alt="calendar icon" width="10px"> 08/2016 - 08/2017 | 09/2013 - 07/2015
-                                <br>
-                                <img src="./assets/location.png" alt="location icon" width="10px"> Canoas  | Porto Alegre
-                            </span>
-
-                            <hr class="soft-break">
-                            <ul>
-                                <li>
-                                    Teach the English language to students of all levels and ages.
-                                </li>
-                                <li>
-                                    Prepare classes, homework, tests, and online extra activities on CCAA’s app.
-                                </li>
-                                <li>
-                                    Prepare long-term teaching schemes for premium individual students.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <header class="section__head reveal">
+                <p class="eyebrow">Selected work</p>
+                <h2>Projects</h2>
+                <div class="tabs" role="tablist" aria-label="Filter projects">
+                    <button class="tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="tab" data-filter="msc" role="tab" aria-selected="false">M.Sc.</button>
+                    <button class="tab" data-filter="work" role="tab" aria-selected="false">Industry</button>
+                    <button class="tab" data-filter="personal" role="tab" aria-selected="false">Personal &amp; BSc</button>
                 </div>
-            </div>
+            </header>
 
-            <div class="topic further-training" id="further-training">
-                <h1 class="section-header">TRAINING</h1>
-
-                <p>
-                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Diploma in Cybersecurity Fundamentals (CCT College Dublin) - 2023
-                </p>
-                <p>
-                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Supervised Machine Learning (AWS Machine Learning Academy) - 2022
-                </p>
-                <p>
-                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> Diploma in Python Programming (CCT College Dublin) - 2021
-                </p>
-                <p>
-                    <img src="./assets/certificate.png" alt="certificate icon" width="20px"> AZ-900: Microsoft Azure Fundamentals (CCT College Dublin) - 2020
-                </p>
-
-            </div>
-
-            <div class="topic skills-and-abilities" id="skills-and-abilities">
-                <h1 class="section-header">SKILLS AND ABILITIES</h1>
-
-                <div class="row">
-                    <div class="technical col>
-                        <dl class="text-left">
-                            <dt class="list-header"><strong>TECHNICAL EXPERTISE</strong></dt>
-                            <dd class="px-4 py-2"><strong>Programming Languages</strong>
-                                <p>
-                                    Bash Script, C, C++, C#, Java, JavaScript, PHP, Python, TypeScript
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>CI/CD & Automation</strong>
-                                <p>
-                                    Azure DevOps, Unit Testing, Regression Testing, E2E Testing, Build Automation (Maven, GNU Make)
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Backend Frameworks & Microservices</strong>
-                                <p>
-                                    Java Spring Boot, Express.js
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Frontend Frameworks</strong>
-                                <p>
-                                    Vue.js, React
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Python Libraries/Interfaces</strong>
-                                <p>
-                                    Pandas, NumPy, TensorFlow, Matplotlib, PyGame, Python Requests, Python Pillow, Python Beautiful Soup, Tkinter
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Game Development</strong>
-                                <p>
-                                    Unity, Unreal
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Web Development</strong>
-                                <p>
-                                    HTML, CSS, Bootstrap, Tailwind
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Databases</strong>
-                                <p>
-                                    PostgreSQL, MySQL, Cosmos DB, MongoDB, AWS DynamoDB, Oracle Database, SQLite
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Cloud Platforms</strong>
-                                <p>
-                                    Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), Heroku
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Runtime Environments</strong>
-                                <p>
-                                    JRE, Node, .NET
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Version Control & Collaboration</strong>
-                                <p>
-                                    Git, GitHub, AWS Code Commit, Unity Version Control/Plastic SCM, JIRA, Notion
-                                </p>
-                            </dd>
-                            <dd class="px-4 py-2"><strong>Parsers & Tools</strong>
-                                <p>
-                                    ANTLR 4, GNU Bison, Flex
-                                </p>
-                            </dd>
-                        </dl>
+            <div class="projects" id="project-grid">
+                <!-- M.Sc. -->
+                <article class="project reveal" data-cat="msc">
+                    <div class="project__media"><img src="./assets/online-games.webp" data-full="./assets/online-games-full.webp" alt="Two players on the online games platform sharing a live high-score table" loading="lazy" width="960" height="540"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Scalable Microservices</p>
+                        <h3>Online games platform</h3>
+                        <p>A containerised arcade platform: a React + TypeScript frontend, a Python games API exposing REST and gRPC, PostgreSQL, and separate WebSocket services that push live high scores to every player (shown here across two browsers) and run online multiplayer Pong.</p>
+                        <ul class="chips"><li>Microservices</li><li>gRPC</li><li>WebSockets</li><li>React</li><li>Python</li><li>Docker</li></ul>
                     </div>
-                    <div class="professional col">
-                        <dl class="text-left">
-                            <dt class="list-header"><strong>ADDITIONAL SKILLS</strong></dt>
-                            <dd class="px-4 py-2">Strong communication, customer service, and leadership abilities.
-                            <dd class="px-4 py-2">Problem-solving, troubleshooting, and technical decision-making expertise.
-                            <dd class="px-4 py-2">Logical and analytical thinking, with a keen attention to detail.
-                            <dd class="px-4 py-2">Negotiation and cross-functional team collaboration.
+                </article>
+
+                <article class="project reveal" data-cat="msc">
+                    <div class="project__media"><img src="./assets/machine-vision.webp" data-full="./assets/machine-vision-full.webp" alt="Road scene with tracked feature points in green and their projections from the last frame in red" loading="lazy" width="960" height="540"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Machine Vision</p>
+                        <h3>3D reconstruction from video</h3>
+                        <p>Camera calibration, feature tracking across frames, robust estimation of the fundamental and essential matrices with outlier rejection, and triangulation of tracked points into 3D. Closely related to the computer vision behind KinetikIQ.</p>
+                        <ul class="chips"><li>OpenCV</li><li>NumPy</li><li>Epipolar geometry</li><li>Calibration</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="msc">
+                    <div class="project__media project__media--code"><code>int main() { … }<br><span>→ lexer · parser · AST · codegen</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Language Processors</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/C--Compiler" target="_blank" rel="noopener">C-- compiler ↗</a></h3>
+                        <p>A full compiler for a subset of C: ANTLR lexer and parser, AST construction, semantic checks and code generation to assembly for a stack-based virtual machine.</p>
+                        <ul class="chips"><li>Java</li><li>ANTLR 4</li><li>Compilers</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="msc">
+                    <div class="project__media project__media--code"><code>class A ← B ← C<br><span>→ static analysis</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Source Code Analysis</p>
+                        <h3>Java static analysis tools</h3>
+                        <p>Analysers that parse real Java codebases and detect structural patterns and design smells, such as long inheritance chains, and report them for refactoring.</p>
+                        <ul class="chips"><li>Java</li><li>Maven</li><li>AST analysis</li><li>Python</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="msc">
+                    <div class="project__media project__media--code"><code>$ ./cloudctl ec2 launch<br><span>→ boto3 · ansible · k8s</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Cloud Automation &amp; Orchestration</p>
+                        <h3>Cloud automation CLIs</h3>
+                        <p>Interactive CLIs that manage <a href="https://github.com/JFelipeFloresS/AWSBoto3CloudAutomationAndOrchestration" target="_blank" rel="noopener">AWS resources ↗</a> (EC2, EBS, S3, RDS, CloudWatch alarms, plus Ansible provisioning) and <a href="https://github.com/JFelipeFloresS/DockerKubernetesCloudAutomationAndOrchestration" target="_blank" rel="noopener">Docker &amp; Kubernetes ↗</a> workloads.</p>
+                        <ul class="chips"><li>Python</li><li>Boto3</li><li>Ansible</li><li>Docker</li><li>Kubernetes</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="msc">
+                    <div class="project__media project__media--code"><code>df.groupBy(…).agg(…)<br><span>→ batch · streaming</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Big Data Processing</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/Big-Data-Processing-CA1" target="_blank" rel="noopener">Spark data pipelines ↗</a></h3>
+                        <p>The same analytics solved with Spark Core RDDs and DataFrames, then with Spark Streaming versus Structured Streaming, comparing their trade-offs and limits.</p>
+                        <ul class="chips"><li>Apache Spark</li><li>PySpark</li><li>Streaming</li><li>Databricks</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="msc">
+                    <div class="project__media project__media--code"><code>solver.Solve(model)<br><span>→ optimal routes</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">M.Sc. · Decision Analytics</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/Decision-Analytics-Constraint-Programming" target="_blank" rel="noopener">Constraint programming ↗</a></h3>
+                        <p>Delivery-route optimisation for a logistics problem, plus a Sudoku solver, modelled as constraint programs with Google OR-Tools.</p>
+                        <ul class="chips"><li>Python</li><li>OR-Tools</li><li>Optimisation</li></ul>
+                    </div>
+                </article>
+
+                <!-- Industry / earlier -->
+                <article class="project project--code reveal" data-cat="work">
+                    <div class="project__media project__media--code"><code>GET /assessments/{id}<br><span>→ spring boot · azure</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">KinetikIQ · Core service</p>
+                        <h3>Assessment API</h3>
+                        <p>The core REST API behind the web dashboard and the iOS app. It manages organisations, athletes, assessments and results across PostgreSQL, Cosmos DB and Blob Storage, is secured with Azure AD B2C tokens, and runs on App Service behind Front Door.</p>
+                        <ul class="chips"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Cosmos DB</li><li>Blob Storage</li><li>Azure</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="work">
+                    <div class="project__media project__media--code"><code>ws.send(update)<br><span>→ dashboard · iOS app</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">KinetikIQ · Real-time service</p>
+                        <h3>Notifications service</h3>
+                        <p>A WebSocket service that pushes live updates, such as results being ready, to the Vue dashboard and the Unity app at the same time.</p>
+                        <ul class="chips"><li>C#</li><li>ASP.NET Core</li><li>Azure Functions</li><li>WebSockets</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="work">
+                    <div class="project__media project__media--code"><code>skeleton → metrics<br><span>→ databricks pipeline</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">KinetikIQ · Data platform</p>
+                        <h3>Movement data pipeline</h3>
+                        <p>The processing pipeline that turns raw 3D skeleton data from each recording into movement metrics ready for the dashboard. I set its architecture and direction with the data engineering team.</p>
+                        <ul class="chips"><li>Databricks</li><li>PySpark</li><li>Cosmos DB</li><li>Managed identities</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="work">
+                    <div class="project__media"><img src="./assets/apgcat.png" alt="Aurora PostgreSQL Compatibility Assessment Tool" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">AWS · Internship</p>
+                        <h3>Aurora PostgreSQL Compatibility Assessment Tool</h3>
+                        <p>A PostgreSQL extension that lets customers check whether their Aurora schema (functions, procedures, triggers, tables) is compatible with Aurora Limitless Database. The assessment runs asynchronously in a separate database and uploads a report to S3.</p>
+                        <ul class="chips"><li>C</li><li>PL/pgSQL</li><li>Bash</li><li>S3</li><li>EC2</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/teamselectr.webp" data-full="./assets/teamselectr-full.webp" alt="TeamSelectr team sheet with post-match awards" loading="lazy" width="960" height="540"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Personal · Live with friends</p>
+                        <h3>TeamSelectr</h3>
+                        <p>An invite-only web app for organising casual football with friends: match sign-ups, team sheets, payment tracking, and post-match voting that rates players and crowns a Man and a Donkey of the Match. There's also an admin area with an audit log. It sends push notifications, installs on the home screen, and works in English and Portuguese.</p>
+                        <ul class="chips"><li>Next.js</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>Web Push</li><li>next-intl</li><li>Vercel</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/eafc.webp" data-full="./assets/eafc-full.webp" alt="EAFC squad builder: a squad lined up on a football pitch" loading="lazy" width="960" height="540"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Personal · Live with friends</p>
+                        <h3>EAFC squad builder</h3>
+                        <p>A multiplayer career game for friends, built on more than 17,000 real player ratings. Each manager builds a squad on a visual pitch, and the game adds a transfer market, trades between managers, drafts, seasons, and budgets with player values and salaries. Scripts import new rating updates in place without reseeding the database.</p>
+                        <ul class="chips"><li>Next.js</li><li>React 19</li><li>libSQL / Turso</li><li>SQLite</li><li>PapaParse</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/budget.webp" data-full="./assets/budget-full.webp" alt="Budget app: grouping spending categories into a shared budget" loading="lazy" width="960" height="540"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Personal · Household tool</p>
+                        <h3>Shared budget app</h3>
+                        <p>A budget app for two people. It handles paydays and bills on any schedule, warns you live before a purchase tips you over budget, and imports bank-statement PDFs entirely in the browser, remembering the category you chose for each shop. It also has category budgets that can be grouped to share one limit, savings pots, and suggested budgets based on your past six months.</p>
+                        <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>PDF.js</li><li>Vercel</li></ul>
+                    </div>
+                </article>
+
+                <article class="project project--code reveal" data-cat="personal">
+                    <div class="project__media project__media--code"><code>S · A · B · C<br><span>→ generated by AI</span></code></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Personal · Side project</p>
+                        <h3>tier.com</h3>
+                        <p>Describe a topic and an LLM generates a ready-made tier list, returned as structured JSON with titles and images, which you can then rearrange with drag and drop.</p>
+                        <ul class="chips"><li>Next.js</li><li>React</li><li>Gemini API</li><li>dnd-kit</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/indiestationui.png" alt="Indie Station UI" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Final year project</p>
+                        <h3><a href="https://github.com/leitefrancisco/AppFinal" target="_blank" rel="noopener">Indie Station ↗</a></h3>
+                        <p>A cross-platform social app with a built-in online game, backed by a self-hosted MongoDB on EC2 and a Node.js REST API.</p>
+                        <ul class="chips"><li>C#</li><li>Xamarin</li><li>Unity</li><li>Node.js</li><li>MongoDB</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/bestalbumsofalltimeui.png" alt="Best Albums Of All Time UI" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Web app</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/iwa-ca2" target="_blank" rel="noopener">Best Albums of All Time ↗</a></h3>
+                        <p>Build and curate your own all-time album list. React frontend, Express API, MongoDB Atlas.</p>
+                        <ul class="chips"><li>React</li><li>Express</li><li>MongoDB</li><li>Heroku</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/barberappointmentui.png" alt="Barber Appointment App UI" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Desktop app</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/GUI-Programming-CA1" target="_blank" rel="noopener">Barber Appointments ↗</a></h3>
+                        <p>Booking system for barbers and customers, with a self-hosted MySQL database on Google Cloud.</p>
+                        <ul class="chips"><li>Java Swing</li><li>JDBC</li><li>MySQL</li><li>GCP</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/visualsortui.png" alt="Visual Sort UI" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Teaching tool</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/VisualSort/blob/main/main.py" target="_blank" rel="noopener">Visual Sort ↗</a></h3>
+                        <p>Written during class to help classmates see the difference between bubble sort and insertion sort.</p>
+                        <ul class="chips"><li>Python</li><li>PyGame</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/starwarswiki.png" alt="Star Wars Wiki" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">API client</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/StarWarsWiki" target="_blank" rel="noopener">Star Wars Wiki ↗</a></h3>
+                        <p>Browses the <a href="https://swapi.dev/" target="_blank" rel="noopener">Star Wars API</a> in a quick, friendly interface.</p>
+                        <ul class="chips"><li>Python</li><li>PyGame</li><li>Requests</li><li>Pillow</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/minesweeper.png" alt="Mine Sweeper" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Game</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/MineSweeper" target="_blank" rel="noopener">Mine Sweeper ↗</a></h3>
+                        <p>My own twist on the classic, built to learn JFrame.</p>
+                        <ul class="chips"><li>Java</li><li>JFrame</li></ul>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-cat="personal">
+                    <div class="project__media"><img src="./assets/hangman.png" alt="Hangman Game" loading="lazy"></div>
+                    <div class="project__body">
+                        <p class="project__kicker">Game</p>
+                        <h3><a href="https://github.com/JFelipeFloresS/hangman-python" target="_blank" rel="noopener">Hangman ↗</a></h3>
+                        <p>Hangman with words scraped at random from sources like Urban Dictionary and Vocabulary.com.</p>
+                        <ul class="chips"><li>Python</li><li>Beautiful Soup</li><li>PyGame</li></ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- STORY / TIMELINE -->
+        <section class="section container" id="story">
+            <header class="section__head reveal">
+                <p class="eyebrow">2013 → today</p>
+                <h2>My story</h2>
+                <p class="section__lead">From psychology research in Porto Alegre, through coffee competitions and an IT degree in Dublin, to leading engineering at a cutting-edge sports-tech company.</p>
+            </header>
+
+            <div class="timeline" id="timeline">
+                <div class="timeline__track" aria-hidden="true"><div class="timeline__fill" id="timeline-fill"></div></div>
+
+                <article class="tl-item" data-year="2025">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta">
+                            <span class="badge badge--accent">In progress</span>
+                            <span>2025 – present</span><span>Part-time</span>
+                        </div>
+                        <h3>M.Sc. in Software Architecture &amp; Design</h3>
+                        <p class="tl-card__org"><a href="https://www.mtu.ie/" target="_blank" rel="noopener">Munster Technological University</a></p>
+                        <p>Studying alongside my full-time role, with a focus on how large systems are designed, built and run.</p>
+                        <ul class="chips chips--muted">
+                            <li>Scalable Microservices</li><li>Machine Vision</li><li>Language Processors</li>
+                            <li>Source Code Analysis</li><li>Cloud Automation</li><li>Big Data Processing</li><li>Decision Analytics</li>
+                        </ul>
+                        <a class="tl-card__link" href="#projects" data-jump="msc">See M.Sc. projects →</a>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2023">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta">
+                            <span class="badge badge--accent">Current</span>
+                            <span>08/2023 – present</span><span>Dublin, IE</span>
+                        </div>
+                        <h3>Head of Software Engineering</h3>
+                        <p class="tl-card__org"><a href="https://www.kinetikiq.com/" target="_blank" rel="noopener">KinetikIQ</a></p>
+                        <ul>
+                            <li>Lead a cross-functional team of software, data and ML engineers: hiring, onboarding, 1:1s, career development and mentoring.</li>
+                            <li>Turn company goals into a roadmap with leadership; scope projects and run sprint planning and reviews with frontend, backend, data, sports science and sales.</li>
+                            <li>Own the architecture across the Unity iOS app, Vue dashboard, Spring Boot and .NET services, Databricks pipeline and Azure infrastructure.</li>
+                            <li>Introduced feature-flagged releases, versioned database migrations and identity-based access with Entra ID.</li>
+                            <li>Took platform uptime from 85% to 99.9% with gated CI/CD and Datadog monitoring.</li>
+                                                    </ul>
+                        <figure>
+                            <img src="./assets/pstbestnewsportsbusinessoftheyear.jpeg" alt="Best New Sports Business of the Year award" loading="lazy">
+                            <figcaption>Irish Sport Industry Awards 2024: Best New Sports Business of the Year</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2022">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>07/2022 – 06/2023</span><span>Dublin, IE</span></div>
+                        <h3>Software Development Engineer Intern</h3>
+                        <p class="tl-card__org">Amazon Web Services · <a href="https://aws.amazon.com/rds/aurora/" target="_blank" rel="noopener">Aurora</a></p>
+                        <ul>
+                            <li>Owned a project end to end, from requirements to delivery, building customer-facing tools for Aurora customers, including Netflix, Verizon and BMC.</li>
+                            <li>Worked on database internals in C.</li>
+                            <li>Worked with a global, cross-disciplinary team.</li>
+                        </ul>
+                        <figure>
+                            <img src="./assets/amazoninternship.jpeg" alt="Last day of internship at Amazon" loading="lazy">
+                            <figcaption>My last day of the internship</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2020">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>09/2020 – 06/2022</span><span>Dublin, IE</span></div>
+                        <h3>Student Mentor</h3>
+                        <p class="tl-card__org">CCT College Dublin · <a href="https://www.cct.ie/cct-student-mentoring-academy/" target="_blank" rel="noopener">Mentoring Academy</a></p>
+                        <p>Helped students from every technology programme at the college with their questions.</p>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2019">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta">
+                            <span class="badge">GPA 4.0/4.0</span>
+                            <span>09/2019 – 07/2022</span><span>Dublin, IE</span>
+                        </div>
+                        <h3>BSc (Hons) in Information Technology</h3>
+                        <p class="tl-card__org"><a href="https://www.cct.ie/" target="_blank" rel="noopener">CCT College Dublin</a></p>
+                        <ul class="chips chips--muted">
+                            <li>Data Structures &amp; Algorithms</li><li>Operating Systems</li><li>Advanced Databases</li>
+                            <li>Big Data Integration</li><li>OO Design Patterns</li><li>Interactive Web Apps</li>
+                            <li>Switching &amp; Routing</li><li>Network Forensics</li>
+                        </ul>
+                        <p class="highlight">🏆 <strong>Student of the Year 2022</strong>, awarded for the highest grades.</p>
+                        <figure class="figure--portrait">
+                            <img src="./assets/studentoftheyearaward.jpeg" alt="Receiving the Student of the Year award" loading="lazy">
+                            <figcaption>Graduation day, receiving the award</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2017">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>10/2017 – 06/2022</span><span>Dublin, IE</span></div>
+                        <h3>Barista Team Leader</h3>
+                        <p class="tl-card__org">Bewley's Oriental Café</p>
+                        <ul>
+                            <li>Built and ran a stock management system; organised schedules and trained new staff.</li>
+                            <li>Made high-quality drinks in a fast-paced environment.</li>
+                        </ul>
+                        <p class="highlight">🏆 <strong>2022 Irish Coffee in Good Spirits champion</strong>. Represented Ireland at World of Coffee in Milan.</p>
+                        <div class="video">
+                            <iframe src="https://www.youtube-nocookie.com/embed/47zvg4gu6S0" title="Irish Coffee In Good Spirits 2022 performance" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2014">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>04/2014 – 06/2016</span><span>Porto Alegre, BR</span></div>
+                        <h3>Undergrad Researcher</h3>
+                        <p class="tl-card__org">UFRGS · <a href="https://www.ufrgs.br/lpnec/" target="_blank" rel="noopener">LPNeC</a></p>
+                        <ul>
+                            <li>Ran test batteries with research participants in schools and rehabilitation facilities.</li>
+                            <li>Analysed data, reviewed literature, co-wrote articles and presented at conferences.</li>
+                        </ul>
+                        <p class="tl-card__sub">Contributions</p>
+                        <ul class="links">
+                            <li><a href="https://www.lume.ufrgs.br/handle/10183/157466" target="_blank" rel="noopener">Executive Functions, Inhibitory Control, and Aggression in Individuals with Alcohol and Crack Disorders ↗</a></li>
+                            <li><a href="https://www.lume.ufrgs.br/handle/10183/130498" target="_blank" rel="noopener">Impulsivity, Inhibitory Control, and Alcohol Consumption in Preadolescents and Adolescents ↗</a></li>
                         </ul>
                     </div>
-                </div>
+                </article>
+
+                <article class="tl-item" data-year="2013">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>07/2013 – 06/2017</span><span>Porto Alegre, BR</span></div>
+                        <h3>BA (Hons) in Psychology</h3>
+                        <p class="tl-card__org">Universidade Federal do Rio Grande do Sul</p>
+                    </div>
+                </article>
+
+                <article class="tl-item" data-year="2013">
+                    <div class="tl-item__dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-card__meta"><span>2013 – 2015 · 2016 – 2017</span><span>Porto Alegre &amp; Canoas, BR</span></div>
+                        <h3>English Instructor</h3>
+                        <p class="tl-card__org">CCAA (CCLS)</p>
+                        <ul>
+                            <li>Taught English to students of all levels and ages.</li>
+                            <li>Prepared classes, tests and online activities, plus long-term plans for one-to-one students.</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
-            <br>
-            <div class="topic social-media text-center row" id="socials">
+        </section>
 
-                <div class="social-logo col-4">
-                    <a href="https://github.com/JFelipeFloresS" target="_blank"><img src="./assets/github.png" alt="GITHUB" width="50px"></a>
-                </div>
-                <div class="social-logo col-4">
-                    <a href="https://www.linkedin.com/in/jose-felipe-flores-da-silva/" target="_blank"><img src="./assets/linkedin.png" alt="LINKED IN" width="50px"></a>
-                </div>
-                <div class="social-logo col-4">
-                    <a href="mailto:josefelipefloress@gmail.com" target="_blank"><img src="./assets/mail.png" alt="email" width="50px"></a>
-                </div>
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <header class="section__head reveal">
+                <p class="eyebrow">Toolbox</p>
+                <h2>Skills &amp; training</h2>
+            </header>
 
+            <div class="skills">
+                <div class="skill-group reveal"><h3>Languages</h3><ul class="chips"><li>Java</li><li>C#</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>C</li><li>C++</li><li>Bash</li><li>PHP</li></ul></div>
+                <div class="skill-group reveal"><h3>Backend &amp; APIs</h3><ul class="chips"><li>Spring Boot</li><li>ASP.NET Core</li><li>FastAPI</li><li>Express</li><li>gRPC</li><li>REST</li><li>WebSockets</li></ul></div>
+                <div class="skill-group reveal"><h3>Frontend &amp; mobile</h3><ul class="chips"><li>Vue</li><li>React</li><li>Next.js</li><li>Vite</li><li>Tailwind</li><li>eCharts</li><li>Unity</li><li>Unreal</li></ul></div>
+                <div class="skill-group reveal"><h3>AI, ML &amp; vision</h3><ul class="chips"><li>LLM integration</li><li>Gemini API</li><li>Structured outputs</li><li>OpenCV</li><li>3D reconstruction</li><li>TensorFlow</li><li>NumPy</li><li>Pandas</li></ul></div>
+                <div class="skill-group reveal"><h3>Data engineering</h3><ul class="chips"><li>Databricks</li><li>Apache Spark</li><li>PySpark</li><li>Spark Streaming</li><li>OR-Tools</li></ul></div>
+                <div class="skill-group reveal"><h3>Databases</h3><ul class="chips"><li>PostgreSQL</li><li>Cosmos DB</li><li>MySQL</li><li>MongoDB</li><li>DynamoDB</li><li>Supabase</li><li>Oracle</li><li>SQLite</li><li>Turso</li><li>Flyway</li></ul></div>
+                <div class="skill-group reveal"><h3>Cloud &amp; DevOps</h3><ul class="chips"><li>Azure</li><li>AWS</li><li>GCP</li><li>Docker</li><li>Kubernetes</li><li>Ansible</li><li>Boto3</li><li>Azure DevOps</li><li>GitHub Actions</li><li>Datadog</li><li>Vercel</li></ul></div>
+                <div class="skill-group reveal"><h3>Security &amp; identity</h3><ul class="chips"><li>Entra ID</li><li>Managed identities</li><li>Key Vault</li><li>Azure AD B2C</li><li>MSAL</li><li>JWT</li></ul></div>
+                <div class="skill-group reveal"><h3>Testing &amp; code quality</h3><ul class="chips"><li>Playwright</li><li>Unity Test Framework</li><li>Unit &amp; integration testing</li><li>JavaParser</li><li>Static analysis</li></ul></div>
+                <div class="skill-group reveal"><h3>Compilers &amp; tools</h3><ul class="chips"><li>ANTLR 4</li><li>GNU Bison</li><li>Flex</li><li>Maven</li><li>Git</li><li>AI coding assistants</li></ul></div>
+                <div class="skill-group reveal"><h3>Leadership</h3><ul class="chips"><li>Team leadership</li><li>Hiring</li><li>Mentoring</li><li>Roadmapping</li><li>Sprint planning</li><li>Cross-team collaboration</li></ul></div>
             </div>
-        </div>
 
-    </div>
+            <div class="certs reveal">
+                <h3>Certifications</h3>
+                <ul>
+                    <li><span>2023</span>Diploma in Cybersecurity Fundamentals · CCT College Dublin</li>
+                    <li><span>2022</span>Supervised Machine Learning · AWS Machine Learning Academy</li>
+                    <li><span>2021</span>Diploma in Python Programming · CCT College Dublin</li>
+                    <li><span>2020</span>AZ-900: Microsoft Azure Fundamentals · CCT College Dublin</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact container reveal" id="contact">
+            <h2>Let's talk.</h2>
+            <p>Open to a chat about engineering leadership, sports tech, or AI in products.</p>
+            <a class="btn btn--large" href="mailto:josefelipefloress@gmail.com">josefelipefloress@gmail.com</a>
+            <div class="socials">
+                <a href="https://github.com/JFelipeFloresS" target="_blank" rel="noopener" aria-label="GitHub"><img src="./assets/github_white.png" alt="" width="22" height="22"></a>
+                <a href="https://www.linkedin.com/in/jose-felipe-flores-da-silva/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./assets/linkedin_white.png" alt="" width="22" height="22"></a>
+                <a href="mailto:josefelipefloress@gmail.com" aria-label="Email"><img src="./assets/mail_white.png" alt="" width="22" height="22"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <span>© <span id="year">2026</span> Felipe Flores</span>
+        <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+        <button class="lightbox__close" type="button" aria-label="Close">×</button>
+        <figure>
+            <img id="lightbox-img" src="" alt="">
+            <figcaption id="lightbox-cap"></figcaption>
+        </figure>
+    </dialog>
+
+    <script src="./script/main.js"></script>
 </body>
-
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="./script/contact.js"></script>
-<script src="./script/logo.js"></script>
-<script src="./script/skills.js"></script>
 </html>
